@@ -26,8 +26,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.nav-btn,
 .btn-primary {
   font-size: 16px;
   padding: 12px 16px;
@@ -42,6 +40,10 @@
   font-weight: 600;
   color: white;
   cursor: pointer;
+  transition: background 0.6s ease-in;
+}
+.btn-primary:hover {
+  background: #16a34a;
 }
 
 /* nav styles */
@@ -134,7 +136,15 @@ hr {
   cursor: pointer;
   border: 1px solid #00ff88;
 }
-
+.btn-2:hover {
+  background: linear-gradient(
+    47deg,
+    rgb(246, 10, 215),
+    rgb(72, 164, 108),
+    rgba(145, 0, 248, 1)
+  );
+  color: white;
+}
 /* podcast styles */
 .podcast {
   background-color: #1a0b2e;
@@ -171,6 +181,10 @@ hr {
 }
 .analysis {
   justify-items: center;
+  transition: transform 3s 1s;
+}
+.analysis:hover {
+  transform: rotate(-45deg);
 }
 .analysis h2 {
   color: #00ff88;
@@ -344,13 +358,17 @@ footer {
   margin-top: 32px;
 }
 
+
+
+
+
 /*================== Responsive styles 576px =====================*/
 @media screen and (max-width: 576px) {
   .hamburger-menu {
     display: block;
   }
   .menu,
-  .nav-btn {
+  .btn-primary {
     display: none;
   }
   .brand h2 {
