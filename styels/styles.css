@@ -446,6 +446,7 @@ footer {
   .podcast-title {
     font-size: 32px;
     font-weight: bold;
+    padding-top: 30px;
     margin-top: 25px;
     margin-bottom: 16px;
   }
