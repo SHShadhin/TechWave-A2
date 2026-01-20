@@ -12,6 +12,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #1a0b2e;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -564,7 +567,7 @@ footer {
 
 /*=========================== Responsive above 992px =================================== */
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 993px) and (max-width: 1280px) {
   .banner {
     background-image: url(../assets/hero-bg.png);
     background-size: contain;
@@ -627,15 +630,10 @@ footer {
 
   /* ========== featured section =========== */
   .feature-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     width: 90%;
     gap: 30px;
   }
-  .three {
-    grid-column: span 2;
-    width: 100%;
-  }
-
   /* ========== host profile ============ */
   .host-profile {
     width: 90%;
